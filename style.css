@@ -8,3 +8,109 @@ body {
   min-width: 992px;
   font-family: Helvetica;
 }
+
+header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+header .logo {
+  padding-left: 30px;
+}
+
+header .logo img {
+  height: 20px;
+}
+
+header nav {
+  padding-right: 30px;
+}
+
+header nav .menu {
+  list-style: none;
+}
+
+header nav .menu li {
+  display: inline-block;
+}
+
+header nav .menu li:not(:last-child) {
+  margin-right: 30px;
+}
+
+header nav .menu li a {
+  font-size: 13px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.main-image {
+  height: 450px;
+  background-image: url(images/hero_header.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.content .main-title {
+  margin: 60px 0;
+}
+
+.content .main-title p {
+  text-align: center;
+  font-size: 24px;
+  color: #545454;
+  font-weight: bold;
+}
+
+.content .main-content {
+  width: 715px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px 20px;
+}
+
+.main-content .product {
+  cursor: pointer;
+}
+
+.main-content .product a {
+  text-decoration: none;
+  color: #545454;
+}
+
+.content .main-content img {
+  width: 225px;
+  height: 225px;
+}
+
+.main-content .product-info p {
+  text-align: center;
+  font-size: 16px;
+}
+
+.main-content .product-info p:first-child {
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+footer .icon {
+  list-style: none;
+  margin-top: 120px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+footer .icon li {
+  display: inline-block;
+}
+
+footer .icon li:not(:last-child) {
+  margin-right: 20px;
+}
+
+footer .icon li a img {
+  height: 20px;
+}
